@@ -56,9 +56,9 @@ ul {
     display: block;
 }
 
-li {
+/* li {
     display: inline-block;
-}
+} */
 
 a {
     cursor: pointer;
@@ -200,6 +200,11 @@ header .social-icons i {
     color: white;
     margin-left: 8px;
 }
+header .social-icons i:hover {
+    
+    color: #213067;
+    
+}
 
 .square {
     height: auto;
@@ -213,7 +218,7 @@ header .social-icons i {
     font-weight: 600;
     top: 0;
     width: 100%;
-    background: #213067;
+    background: #213067fa;
 }
 
 .sticky img {
@@ -230,8 +235,8 @@ header .social-icons i {
     transition-duration: 0.5s;
 }
 
-header .social-icons i:hover {
-    color: #000000;
+.sticky .social-icons i:hover {
+    color: #ffc107;
 }
 
 .sticky p {
@@ -284,7 +289,7 @@ header .social-icons i:hover {
 
 .sidenav a:hover,
 .sidenav .active {
-    color: #49a003;
+    color: #ffc107;
 }
 
 .sidenav .closebtn {
@@ -320,7 +325,7 @@ nav .another {
 
 header .border-img {
     position: absolute;
-    opacity: 0.4;
+    opacity: 0.5;
     bottom: -25px;
 }
 
@@ -832,7 +837,7 @@ header .border-img {
 .blog {
     width: 100%;
     height: auto;
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 100px;
     position: relative;
     font-family: 'Old Standard TT', serif;
@@ -869,8 +874,8 @@ header .border-img {
 }
 
 .blog .heading img {
-    width: 80px;
-    height: 80px
+    width: 200px;
+    height: 200px;
 }
 
 .blog figure img {
@@ -931,7 +936,7 @@ header .border-img {
 
 .blog .button .btn-success:hover {
     color: #ffffff;
-    background-color: #b6b6b7;
+    background-color: #212529;
     border: 1px solid #b6b6b7;
 }
 
@@ -1031,11 +1036,131 @@ header .border-img {
 
 .blog-page .button .btn-success:hover {
     color: #ffffff;
-    background-color: #b6b6b7;
+    background-color: #212529;
     border: 2px solid #b6b6b7;
 }
 
+/*==================== 
+  Imagenes-Museo
+====================*/
 
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    /* z-index: 1; */
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 75%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ 
 /*==================== 
     Contact Styles
 ====================*/
@@ -1108,6 +1233,104 @@ header .border-img {
     border: 0;
 }
 
+#contacto .form-inline .form-control {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: #80808070;
+    border-radius: 10px;
+}
+#contacto .form-inline .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+.contactoBTN {
+    font-size: 13px;
+    padding: 15px 40px;
+    margin: 30px 0;
+    font-weight: 600;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #cccccc;
+    border: 2px solid #b6b6b7;
+    font-family: 'Montserrat', sans-serif;
+}
+.contactoBTN:hover {
+    color: #ffffff;
+    background-color: #212529;
+    border: 2px solid #b6b6b7;
+}
+.GaleriaBTN {
+    font-size: 13px;
+    padding: 15px 40px;
+    margin: 30px 0;
+    font-weight: 600;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #cccccc;
+    border: 2px solid #b6b6b7;
+    font-family: 'Montserrat', sans-serif;
+}
+.GaleriaBTN:hover {
+    color: #ffffff;
+    background-color: #212529;
+    border: 2px solid #b6b6b7;
+}
+.RegresarBTN {
+    font-size: 13px;
+    padding: 15px 40px;
+    margin: 30px 0;
+    font-weight: 600;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: #cccccc;
+    border: 2px solid #b6b6b7;
+    font-family: 'Montserrat', sans-serif;
+}
+.RegresarBTN:hover {
+    color: #ffffff;
+    background-color: #212529;
+    border: 2px solid #b6b6b7;
+}
+.homebtn {
+    font-size: 14px;
+    padding: 15px 28px;
+    margin: 30px 0;
+    font-weight: 700;
+    border-radius: 100px;
+    text-transform: uppercase;
+    background-color: transparent;
+    border-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.homebtn:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+}
 .contact form .btn-primary,
 .contact form .btn-primary:not(:disabled):not(.disabled):active {
     font-family: 'Montserrat', sans-serif;
@@ -1119,6 +1342,11 @@ header .border-img {
     padding: 10px 50px;
     font-size: 16px;
     text-transform: uppercase;
+}
+.contact form .btn-primary:hover {
+    color: #000000;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active:focus {
@@ -1164,6 +1392,9 @@ header .border-img {
 .copyright p a {
     color: #ffffff;
 }
+.copyright .fa:hover {
+    color: #ffc107;
+}
 
 .copyright p {
     font-size: 18px;
@@ -1175,7 +1406,7 @@ header .border-img {
     width: 100%;
     padding-bottom: 30px;
     object-fit: cover;
-    opacity: 0.2;
+    opacity: 0.5;
 }
 
 /*===========================
@@ -1185,7 +1416,7 @@ header .border-img {
 #about-us {
     border-bottom: 1px solid gray;
     padding-top: 20px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
     position: relative;
     background-color: #fff;
 }
@@ -1215,6 +1446,10 @@ header .border-img {
 #about-us h5 span {
     padding: 0 10px;
 }
+#about-us li {
+    list-style-type: circle;
+    margin-left: 30px;
+}
 
 #about-us h3 {
     color: #000000;
@@ -1227,263 +1462,49 @@ header .border-img {
 
 #about-us p {
     margin: 0;
-    color: #a3a3a3;
+    color: #333333;
     font-size: 16px;
     line-height: 35px;
     letter-spacing: 0.5px;
     font-weight: 400;
     margin-bottom: 40px;
+    text-align: justify;
 }
 
 #about-us .image {
-    width: 100%;
+    width: 95%;
    /* height: 394px; */
     margin-bottom: 52px;
 }
-
+#about-us .img_div_escudo {
+    width: 20%;
+}
+#about-us .heading {
+    text-align: center;
+}
 #about-us .thumbnail {
     padding: 0;
     border: none;
     border-radius: 0;
     object-fit: cover;
 }
-
-/*========================
-      Services-Page
-=========================*/
-
-#services {
-    padding-top: 30px;
-    padding-bottom: 200px;
-    position: relative;
-    font-family: 'Old Standard TT', serif;
-}
-
-#services .part-1,
-.part-2,
-.part-3 {
-    padding-bottom: 50px;
-}
-
-#services:after {
-    content: "";
+#ArticuleMes .image {
     width: 100%;
-    height: 100px;
-    background: url(../images/background-white-color-1.png);
-    bottom: -94px;
-    z-index: 9;
-    left: 0;
-    position: absolute;
-    display: inline-block;
+    height: 394px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+#ArticuleMes {
+    text-align: center;
 }
 
-#services .fa-envira {
-    color: #54a50f;
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-#services h2 {
-    color: #362f2d;
+#ArticuleMes h3 {
+    color: #000000;
     font-size: 56px;
+    padding-top: 40px;
     padding-bottom: 30px;
-    font-weight: 500;
     text-transform: capitalize;
-}
-
-#services .heading {
-    padding-bottom: 0;
-}
-
-#services img {
-    width: 92%;
-    height: 350px;
-    object-fit: cover;
-}
-
-#services .heading h3 {
-    color: #111111;
-    font-size: 30px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-#services p {
-    font-size: 22px;
-    line-height: 2;
-    font-weight: 400;
-    color: #a3a3a3;
-}
-
-#services .heading {
-    padding-bottom: 30px;
-}
-
-#services .col1 {
-    margin-top: -10px;
-}
-
-/*========================
-      Products-Page
-=========================*/
-
-#products {
-    padding-top: 30px;
-    padding-bottom: 200px;
-    position: relative;
     font-family: 'Old Standard TT', serif;
-}
-
-#products .part-1,
-.part-2,
-.part-3 {
-    padding-bottom: 50px;
-}
-
-#products:after {
-    content: "";
-    width: 100%;
-    height: 100px;
-    background: url(../images/background-white-color-1.png);
-    bottom: -94px;
-    z-index: 9;
-    left: 0;
-    position: absolute;
-    display: inline-block;
-}
-
-#products .fa-envira {
-    color: #54a50f;
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-#products h2 {
-    color: #362f2d;
-    font-size: 56px;
-    padding-bottom: 30px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-#products .heading {
-    padding-bottom: 0;
-}
-
-#products img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-#products .heading h3 {
-    color: #111111;
-    font-size: 30px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-#products p {
-    font-size: 18px;
-    line-height: 35px;
-    font-weight: 400;
-    color: #a3a3a3;
-}
-
-#products .heading {
-    padding-bottom: 30px;
-}
-
-#products .col1 {
-    margin-top: -8px;
-}
-
-/*========================
-      Rates-Page
-=========================*/
-
-#rates {
-    padding-top: 30px;
-    padding-bottom: 200px;
-    position: relative;
-    font-family: 'Old Standard TT', serif;
-}
-
-#rates .part-1,
-.part-2,
-.part-3 {
-    padding-bottom: 50px;
-}
-
-#rates:after {
-    content: "";
-    width: 100%;
-    height: 100px;
-    background: url(../images/background-white-color-1.png);
-    bottom: -94px;
-    z-index: 9;
-    left: 0;
-    position: absolute;
-    display: inline-block;
-}
-
-#rates .fa-envira {
-    color: #54a50f;
-    font-size: 25px;
-    margin-right: 10px;
-}
-
-#rates h6 {
-    font-size: 18px;
-    line-height: 35px;
-}
-
-#rates h6 span {
-    display: block;
-    font-size: 24px;
-}
-
-#rates h2 {
-    color: #362f2d;
-    font-size: 56px;
-    padding-bottom: 30px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-#rates .heading {
-    padding-bottom: 0;
-}
-
-#rates img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-}
-
-#rates .heading h3 {
-    color: #111111;
-    font-size: 30px;
-    padding-bottom: 10px;
-    font-weight: 500;
-    text-transform: capitalize;
-}
-
-#rates p {
-    font-size: 18px;
-    line-height: 35px;
-    font-weight: 400;
-    color: #a3a3a3;
-}
-
-#rates .heading {
-    padding-bottom: 30px;
-}
-
-#rates .col1 {
-    margin-top: -8px;
 }
 
 /*===========================
@@ -1707,7 +1728,7 @@ header .border-img {
 
 #blog_single p {
     margin: 0;
-    color: #a3a3a3;
+    color: #333333;
     font-size: 16px;
     line-height: 35px;
     letter-spacing: 0.5px;
@@ -1904,7 +1925,7 @@ header .border-img {
     #about-us p {
         font-size: 14px;
         margin-bottom: 20px;
-        line-height: 30px;
+        line-height: 30px;        
     }
     #services h3 {
         font-size: 32px;
@@ -1954,8 +1975,8 @@ header .border-img {
         font-size: 16px;
     }
     .banner-home {
-        height: 550px;
-        padding-top: 70px;
+        /* height: 550px;
+        padding-top: 70px; */
     }
     .banner-home h1 {
         font-size: 42px;
@@ -2056,8 +2077,8 @@ header .border-img {
         font-size: 18px;
     }
     .blog .heading img {
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
         padding-bottom: 10px;
     }
     .blog .heading h2 {
@@ -2096,6 +2117,7 @@ header .border-img {
     }
     .copyright .border-img img {
         padding-bottom: 10px;
+        margin-top: 10%;
     }
     .copyright p {
         font-size: 16px;
@@ -2207,6 +2229,9 @@ header .border-img {
 @media(max-width:786px) {
     .sidenav a {
         font-size: 14px;
+    }
+    .modal{
+        display: none;
     }
     #about-us h5 {
         font-size: 14px;
@@ -2331,8 +2356,8 @@ header .border-img {
         padding-right: 100px;
     }
     .blog .heading img {
-        width: 70px;
-        height: 70px;
+        width: 120px;
+        height: 120px;
         padding-bottom: 10px;
     }
     .blog .heading h3 {
@@ -2372,6 +2397,11 @@ header .border-img {
     .copyright ul,
     .copyright p {
         text-align: center;
+        font-size: 13px;
+    }
+    .copyright ul,
+    .copyright p i {
+        text-align: center;
         font-size: 17px;
     }
     .copyright {
@@ -2395,7 +2425,7 @@ header .border-img {
         letter-spacing: 0.5px;
         line-height: 30px;
         font-weight: 400;
-        color: #a3a3a3;
+        color: #333333;
     }
     #products h2 {
         font-size: 40px;
@@ -2446,7 +2476,7 @@ header .border-img {
         letter-spacing: 0.5px;
         line-height: 30px;
         font-weight: 400;
-        color: #a3a3a3;
+        color: #333333;
     }
     #rates h2 {
         font-size: 40px;
@@ -2524,10 +2554,40 @@ header .border-img {
 
 @media(max-width:425px) {
     nav img {
-        width: 30%;
+        width: 50%;
+    }
+    .modal{
+        display: none;
+    }
+    .row {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        /* margin-left: 0px; */
     }
     .banner-home {
-        height: 450px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        color: #fff;
+        position: relative;
+        padding-top: 180px;
+        background-size: inherit;
+        background-position: top;
+        background-repeat: no-repeat;
+        background-image: url(../images/home-2.jpg);
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        font-family: 'Old Standard TT', serif;
     }
     .banner-home h1 {
         font-size: 30px;
@@ -2562,7 +2622,12 @@ header .border-img {
         padding-bottom: 20px;
     }
     .banner-another {
-        height: 150px;
+        height: 175px;
+    }
+    header .border-img {
+        position: absolute;
+        opacity: 0.5;
+        bottom: -25px;
     }
     .about .heading h3 {
         font-size: 16px;
@@ -2574,10 +2639,23 @@ header .border-img {
         font-size: 28px;
     }
     #about-us h3 {
-        font-size: 24px;
+        font-size: 40px;
+        padding-bottom: 0px;
+        text-align: -webkit-center;
     }
     #about-us .image {
         height: 200px;
+    }
+    #ArticuleMes .image {
+        height: 200px;
+        margin-top: 25px;
+        width: 95%;
+        margin-bottom: 0px;
+    }
+    #ArticuleMes h3 {
+        font-size: 40px;
+        padding-bottom: 25px;
+        text-align: -webkit-center;
     }
     #services .heading h3 {
         font-size: 26px;
@@ -2694,7 +2772,7 @@ header .border-img {
         padding-bottom: 20px;
     }
     a:not([href]):not([tabindex]) {
-        display: none;
+        display: inline-flex;
     }
     #products h2 {
         font-size: 36px;
@@ -2807,11 +2885,35 @@ header .border-img {
     .blog-page-another {
         padding-bottom: 0;
     }
+    #about-us {
+        padding-bottom: 15px;
+    }
+    #about-us p {
+        margin: 15px;
+    text-align: justify;
+    }
+    h1, h2, h3, h4, h5, h6, ul {
+        margin: 10px;
+        padding: 0px;
+    }
+    
+    #about-us .thumbnail {
+        object-fit: contain;
+        margin-bottom: -20px;
+    }
 }
 
 @media(max-width:375px) {
     .banner-home h2 {
         font-size: 17px;
+    }
+    .modal{
+        display: none;
+    }
+    #about-us li {
+        list-style-type: circle;
+        margin-left: 30px;
+        font-size: 13px;
     }
     .services .gradient {
         width: 92%;
@@ -2857,8 +2959,14 @@ header .border-img {
         height: 240px;
     }
     .banner-home h1 {
-        font-size: 24px;
+        font-size: 1.75rem;
         letter-spacing: 0;
+    }
+    .banner-home h3 {
+        font-size: 24px;
+    }
+    .h3, h3 {
+        font-size: 24px;
     }
     .banner-home {
         padding-top: 55px;
@@ -2900,8 +3008,8 @@ header .border-img {
         height: 50px;
     }
     .blog .heading img {
-        width: 50px;
-        height: 50px;
+        width: 120px;
+        height: 120px;
     }
     .blog .heading h2 {
         font-size: 23px;
@@ -2914,10 +3022,10 @@ header .border-img {
         height: 50px;
     }
     .blog-page .heading h2 {
-        font-size: 23px;
+        font-size: 35px;
     }
     .blog-page .heading h3 {
-        font-size: 19px;
+        font-size: 25px;
     }
     .blog-page-another .heading img {
         width: 50px;
@@ -2934,6 +3042,11 @@ header .border-img {
     }
     #blog_single .image {
         height: 200px;
+    }
+    #about-us .thumbnail {
+        object-fit: contain;
+        margin-bottom: -20px;
+        margin-left: 10px;
     }
 }
 
@@ -2965,5 +3078,8 @@ header .border-img {
     }
     .about {
         padding-bottom: 30px;
+    }
+    .modal{
+        display: contents;
     }
 }
