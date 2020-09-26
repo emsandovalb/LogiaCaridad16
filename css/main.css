@@ -1453,13 +1453,11 @@ header .border-img {
     position: absolute;
     display: inline-block;
 }
-
 #about-us h5 {
     color: #616161;
     font-size: 16px;
     font-weight: 500;
 }
-
 #about-us h5 a {
     color: #616161;
 }
