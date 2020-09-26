@@ -173,6 +173,7 @@ header {
     left: 0;
     width: 100%;
     padding: 40px 0;
+    
 }
 
 .header {
@@ -200,12 +201,21 @@ header .social-icons i {
     color: white;
     margin-left: 8px;
 }
-header .social-icons i:hover {
-    
-    color: #213067;
-    
+header .social-icons i:hover {    
+    color: #213067;    
 }
-
+header h1{
+    letter-spacing: -1px;
+    display: flex;
+    color: #fff;
+    position: relative;
+    font-weight: 400;
+    font-size: 50px;
+    letter-spacing: -2px;
+    margin-bottom: 0;
+    margin-left: -30px;
+    font-family: 'Old Standard TT', serif;
+}
 .square {
     height: auto;
     width: 50px;
@@ -243,7 +253,10 @@ header .social-icons i:hover {
     font-size: 12px;
     letter-spacing: 3px;
 }
-
+.sticky h1{
+    font-size: 35px;
+    margin-left: -60px;
+}
 .affix {
     top: 0;
     z-index: 9999 !important;
@@ -326,7 +339,7 @@ nav .another {
 header .border-img {
     position: absolute;
     opacity: 0.5;
-    bottom: -25px;
+    bottom: -50px;
 }
 
 @media screen and (max-height: 450px) {
@@ -402,7 +415,7 @@ header .border-img {
 
 .banner-home {
     width: 100%;
-    height: 100vh;
+    height: 103vh;
     display: flex;
     color: #fff;
     position: relative;
@@ -443,6 +456,7 @@ header .border-img {
     left: 0;
     position: absolute;
     display: inline-block;
+    
 }
 
 .banner-home .gradient {
@@ -637,7 +651,11 @@ header .border-img {
 /*==================== 
     section-4 Styles
 ====================*/
-
+.form-inline {
+    background: #d3d3d3ad;
+    border-radius: 10px;
+    border: solid 1px;
+}
 .section-4 {
     width: 100%;
     height: auto;
@@ -1133,10 +1151,6 @@ header .border-img {
     top: 0;
   }
   
-  img {
-    margin-bottom: -4px;
-  }
-  
   .caption-container {
     text-align: center;
     background-color: black;
@@ -1231,6 +1245,7 @@ header .border-img {
     padding: 10px 10px;
     margin-bottom: 20px;
     border: 0;
+    
 }
 
 #contacto .form-inline .form-control {
@@ -1241,7 +1256,7 @@ header .border-img {
     padding: 10px 10px;
     margin-bottom: 20px;
     border: 0;
-    background-color: #80808070;
+    background-color: #ffffff;
     border-radius: 10px;
 }
 #contacto .form-inline .form-group {
@@ -1261,6 +1276,12 @@ header .border-img {
     margin-bottom: 0;
     margin-top: 20px;
 }
+.padding_Contacto .form-group {
+    padding: 15px 10px 15px 10px;
+}
+.contactoBTN_Centrar{
+    text-align-last: center;
+}
 .contactoBTN {
     font-size: 13px;
     padding: 15px 40px;
@@ -1268,15 +1289,15 @@ header .border-img {
     font-weight: 600;
     border-radius: 100px;
     text-transform: uppercase;
-    background-color: transparent;
-    color: #cccccc;
-    border: 2px solid #b6b6b7;
+    background-color: #ffffff;
+    color: #212529;
+    border: 1px solid #212529;
     font-family: 'Montserrat', sans-serif;
 }
 .contactoBTN:hover {
     color: #ffffff;
     background-color: #212529;
-    border: 2px solid #b6b6b7;
+    border: 1px solid #b6b6b7;
 }
 .GaleriaBTN {
     font-size: 13px;
@@ -1449,6 +1470,7 @@ header .border-img {
 #about-us li {
     list-style-type: circle;
     margin-left: 30px;
+    font-size: 12px;
 }
 
 #about-us h3 {
@@ -1973,10 +1995,6 @@ header .border-img {
     }
     header .social-icons i {
         font-size: 16px;
-    }
-    .banner-home {
-        /* height: 550px;
-        padding-top: 70px; */
     }
     .banner-home h1 {
         font-size: 42px;
@@ -2550,6 +2568,11 @@ header .border-img {
     .mbm_social small {
         font-size: 12px;
     }
+    .padding_Contacto {
+        padding: 0 10px 0 10px;
+        }
+    
+    
 }
 
 @media(max-width:425px) {
@@ -2622,12 +2645,12 @@ header .border-img {
         padding-bottom: 20px;
     }
     .banner-another {
-        height: 175px;
+        height: 200px;
     }
     header .border-img {
         position: absolute;
-        opacity: 0.5;
-        bottom: -25px;
+        opacity: 0.8;
+        bottom: -40px;
     }
     .about .heading h3 {
         font-size: 16px;
@@ -2759,6 +2782,7 @@ header .border-img {
         padding: 10px 10px;
         margin-bottom: 0;
         border: 0;
+        margin-top: 15px;
     }
     .contact form .btn-primary {
         margin: 20px 0;
@@ -2895,12 +2919,18 @@ header .border-img {
     h1, h2, h3, h4, h5, h6, ul {
         margin: 10px;
         padding: 0px;
+        font-size: 22px;
     }
     
     #about-us .thumbnail {
         object-fit: contain;
         margin-bottom: -20px;
     }
+    .padding_Contacto {
+        padding: 0 10px 0 10px;
+        }
+    
+    
 }
 
 @media(max-width:375px) {
@@ -3048,6 +3078,11 @@ header .border-img {
         margin-bottom: -20px;
         margin-left: 10px;
     }
+    .padding_Contacto {
+        padding: 0 10px 0 10px;
+        }
+    
+    
 }
 
 @media(max-width:320px) {
@@ -3082,4 +3117,8 @@ header .border-img {
     .modal{
         display: contents;
     }
+    .padding_Contacto {
+        padding: 0 10px 0 10px;
+        }
+    
 }
