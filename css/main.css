@@ -1244,8 +1244,16 @@ header .border-img {
     border-radius: 0;
     padding: 10px 10px;
     margin-bottom: 20px;
-    border: 0;
-    
+    border: 0;    
+}
+.form-inline2 .form-control {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: 0;    
 }
 
 #contacto .form-inline .form-control {
@@ -1259,7 +1267,35 @@ header .border-img {
     background-color: #ffffff;
     border-radius: 10px;
 }
+#contacto .form-inline2 .form-control {
+    font-size: 16px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 0;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border: 0;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
 #contacto .form-inline .form-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+#contacto .form-inline2 .form-group {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2776,6 +2812,13 @@ header .border-img {
         padding-bottom: 20px;
     }
     .form-inline .form-control {
+        font-size: 14px;
+        padding: 10px 10px;
+        margin-bottom: 0;
+        border: 0;
+        margin-top: 15px;
+    }
+    .form-inline2 .form-control {
         font-size: 14px;
         padding: 10px 10px;
         margin-bottom: 0;
