@@ -255,7 +255,7 @@ header h1{
 }
 .sticky h1{
     font-size: 35px;
-    margin-left: -60px;
+    margin-left: -115px;
 }
 .affix {
     top: 0;
@@ -2969,8 +2969,7 @@ header .border-img {
     }
     .padding_Contacto {
         padding: 0 10px 0 10px;
-        }
-    
+        }   
     
 }
 
