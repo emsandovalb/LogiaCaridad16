@@ -2342,6 +2342,9 @@ header .border-img {
     #about-us {
         padding-bottom: 50px;
     }
+    #about-us li {
+        font-size: 12px;
+    }
     #services p {
         font-size: 14px;
         letter-spacing: 0.5px;
